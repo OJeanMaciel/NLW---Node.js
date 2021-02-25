@@ -1,10 +1,13 @@
 import { Router } from 'express';
-
+import { SurveysController } from './controllers/SurveysController';
 import { UserController } from './controllers/UserController';
 
-const userController = new UserController();
 const router = Router();
 
-router.post('/users', userController.create);
+const userController = new UserController();
+const surveysController = new SurveysController();
 
-export default router;
+router.post('/users', userController.create);
+router.post("/surveys", surveysController.create);
+
+module.exports = router;
