@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Jean\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add node_modules
+  C:\Program Files\nodejs\node.exe C:\Users\Jean\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add jest @type/jest -D
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Jean\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\Jean\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\Jean\AppData\Local\Programs\Python\Python37-32;C:\Users\Jean\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PostgreSQL\12\bin;C:\Users\Jean\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jean\AppData\Roaming\npm;C:\Program Files\heroku\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/node_modules: Not found
+  Error: https://registry.yarnpkg.com/@type%2fjest: Not found
       at Request.params.callback [as _callback] (C:\Users\Jean\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
       at Request.self.callback (C:\Users\Jean\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
       at Request.emit (events.js:315:20)
@@ -34,7 +34,7 @@ npm manifest:
     "license": "MIT",
     "scripts": {
       "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
-      "typerorm": "ts-node-dev node_modules/typeorm/cli.js"
+      "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
     },
     "dependencies": {
       "3": "^2.1.0",
@@ -49,7 +49,7 @@ npm manifest:
       "@types/express": "^4.17.11",
       "@types/uuid": "^8.3.0",
       "ts-node-dev": "^1.1.1",
-      "typescript": "^4.1.5"
+      "typescript": "^4.2.2"
     }
   }
 
@@ -2091,10 +2091,10 @@ Lockfile:
       yargonaut "^1.1.2"
       yargs "^16.0.3"
   
-  typescript@^4.1.5:
-    version "4.1.5"
-    resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.5.tgz#123a3b214aaff3be32926f0d8f1f6e704eb89a72"
-    integrity sha512-6OSu9PTIzmn9TCDiovULTnET6BgXtDYL4Gg4szY+cGsc3JP1dQL8qvE8kShTRx1NIw4Q9IBHlwODjkjWEtMUyA==
+  typescript@^4.2.2:
+    version "4.2.2"
+    resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.2.tgz#1450f020618f872db0ea17317d16d8da8ddb8c4c"
+    integrity sha512-tbb+NVrLfnsJy3M59lsDgrzWIflR4d4TIUjz+heUnHZwdF7YsrMTKoRERiIvI2lvBG95dfpLxB21WZhys1bgaQ==
   
   unpipe@1.0.0, unpipe@~1.0.0:
     version "1.0.0"
